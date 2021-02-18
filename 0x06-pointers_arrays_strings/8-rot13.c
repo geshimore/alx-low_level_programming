@@ -1,37 +1,35 @@
 #include "holberton.h"
 /**
  * rot13 - a function that encodes a string using rot13.
- * @s: input
+ * @n: input
  * Return: encoded string rot13
  */
 
-char *rot13(char *s)
+char *rot13(char *n)
 
 {
 
-	int i;
+	int x = 0, y = 0, neg = -1;
 
-	char str1[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-
-	char str2[] = "nopqrstuvwxyzabcdefghijklm";
+	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
 
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (x = 0; n[x]; x++)
 
 	{
 
-		if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
+		neg = 1;
 
-		{
+		for (y = 0; n[x] != alpha[y] && y < 52; y++)
 
-			s[i] = (s[i] - 65 > 25) ?
+			neg = (neg * -1);
 
-				str2[s[i] - 97] : str1[s[i] - 65];
+		if (n[x] == alpha[y])
 
-		}
+			n[x] = (n[x] + (13 * neg));
 
 	}
 
-	return (s);
+	return (n);
 
 }
