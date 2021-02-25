@@ -10,6 +10,6 @@ int is_palindrome(char *s);
 int squareroot(int n, int i);
 int prime_checker(int n, int i);
 int lengthc(char *s);
-int palindrome(char str[], int st, int end);
+int palindrome(char str[], int s, int e);
 int wildcmp(char *s1, char *s2);
 int findsrc(char *s, char c, int i, int p);
