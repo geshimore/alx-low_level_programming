@@ -1,0 +1,61 @@
+!<arch>
+holberton.h/    1614531638  0     0     100644  669       `
+int _putchar(char c);
+
+int _islower(int c);
+
+int _isalpha(int c);
+
+int _abs(int n);
+
+int _isupper(int c);
+
+int _isdigit(int c);
+
+int _strlen(char *s);
+
+void _puts(char *s);
+
+char *_strcpy(char *dest, char *src);
+
+int _atoi(char *s);
+
+char *_strcat(char *dest, char *src);
+
+char *_strncat(char *dest, char *src, int n);
+
+char *_strncpy(char *dest, char *src, int n);
+
+int _strcmp(char *s1, char *s2);
+
+char *_memset(char *s, char b, unsigned int n);
+
+char *_memcpy(char *dest, char *src, unsigned int n);
+
+char *_strchr(char *s, char c);
+
+unsigned int _strspn(char *s, char *accept);
+
+char *_strpbrk(char *s, char *accept);
+
+char *_strstr(char *haystack, char *needle);
+
+0-isupper.o/    1614535313  0     0     100644  0         `
+0-memset.o/     1614535870  0     0     100644  0         `
+0-strcat.o/     1614536882  0     0     100644  0         `
+1-isdigit.o/    1614536787  0     0     100644  0         `
+1-memcpy.o/     1614537006  0     0     100644  0         `
+1-strncat.o/    1614536719  0     0     100644  0         `
+9-strcpy.o/     1614537354  0     0     100644  0         `
+_putchar.o/     1614536608  0     0     100644  0         `
+2-strchr.o/     1614538014  0     0     100644  0         `
+2-strlen.o/     1614538014  0     0     100644  0         `
+2-strncpy.o/    1614538014  0     0     100644  0         `
+3-islower.o/    1614537924  0     0     100644  0         `
+3-puts.o/       1614537849  0     0     100644  0         `
+3-strcmp.o/     1614537924  0     0     100644  0         `
+3-strspn.o/     1614537924  0     0     100644  0         `
+4-isalpha.o/    1614537711  0     0     100644  0         `
+4-strpbrk.o/    1614537668  0     0     100644  0         `
+5-strstr.o/     1614537550  0     0     100644  0         `
+6-abs.o/        1614537502  0     0     100644  0         `
