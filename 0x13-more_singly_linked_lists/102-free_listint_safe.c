@@ -3,17 +3,15 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - a function that frees a listint_t list.
+ * free_listint_safe - free elements of a list_t list
  * @h: first element of the list
  * Return: the size of the list that was dddd
  */
 
 size_t free_listint_safe(listint_t **h)
 {
-
 	listint_t *temp;
 	listint_t *aux;
-
 	size_t i;
 
 	i = 0;
@@ -24,12 +22,9 @@ size_t free_listint_safe(listint_t **h)
 	while (temp != NULL)
 	{
 		i++;
-
 		aux = temp;
 		temp = temp->next;
-
 		free(aux);
-
 		if (aux < temp)
 		{
 			break;
