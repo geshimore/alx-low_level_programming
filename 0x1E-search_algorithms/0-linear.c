@@ -17,7 +17,7 @@ int linear_search(int *array, size_t size, int value)
 			return (i);
 		}
 	}
-	if (array == 0)
+	if (!array)
 	{
 		return (-1);
 	}
